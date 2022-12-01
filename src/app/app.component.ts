@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Camille_DANG_App_Test';
+
+entierAleatoire(max: number)
+{
+  alert(Math.floor(Math.random() * (max)));
+  
+}
+
 }

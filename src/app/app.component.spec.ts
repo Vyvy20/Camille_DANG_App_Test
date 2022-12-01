@@ -32,4 +32,13 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('Camille_DANG_App_Test app is running!');
   });
+
+  it('Not zero', () => {
+
+    const fixture = TestBed.createComponent(AppComponent);
+    const btnTest = fixture.nativeElement.querySelector('[id="BtnTest"]')
+    btnTest.click();
+    fixture.detectChanges();
+
+  })
 });
